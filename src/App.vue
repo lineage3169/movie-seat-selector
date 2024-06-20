@@ -45,15 +45,14 @@ const initSeats = () => {
     const seatData = {
       isSelected: false, // 被選取
       isSold: false, // 已售出
-      // unavailable 是走道元素不可被點選, 也不會有 id
+      id: null,
+      // unavailable 是走道元素不可被點選
       status: isUnavailable ? 'unavailable' : 'available'
     }
     if (!isUnavailable) {
       seatData.id = availableSeatId++
       if (soldSeatIds.includes(seatData.id))
         seatData.isSold = true
-    } else {
-      seatData.id = null // 不可用座位設置為 null
     }
     return seatData
   })
