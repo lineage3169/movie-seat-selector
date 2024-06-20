@@ -84,7 +84,7 @@ const handleClick = (index) => {
   transform: translate(-50%, -50%);
 
   .title {
-    font-size: 24px;
+    font-size: 20px;
     color: #15964e;
     margin-bottom: 48px;
   }
@@ -97,13 +97,16 @@ const handleClick = (index) => {
   .legend-item {
     display: flex;
     align-items: center;
-    margin-right: 18px; // 待確認
+    margin-right: 16px;
     &:first-child .seat{
       background-color: #15964e;
       border-color: #15964e;
     }
+    &:last-child {
+      margin-right: 0;
+    }
     .seat {
-      margin-right: 4px; // 待確認
+      margin-right: 4px;
       cursor: auto;
     }
   }
