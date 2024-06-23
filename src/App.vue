@@ -31,7 +31,7 @@
   </main>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 
 const rows = 10
 const seatsPerRow = 18
